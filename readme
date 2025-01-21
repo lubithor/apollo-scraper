@@ -1,0 +1,15 @@
+# to scrape more than 1K leads, add this at the start of the script
+
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+
+// Define the convertKToNumber function to handle 'K' notation
+function convertKToNumber(input) {
+    let number;
+    if (typeof input === 'string' && input.includes('K')) {
+        number = parseFloat(input.replace('K', '')) * 1000;
+    } else {
+        number = parseInt(input, 10);
+    }
+    return isNaN(number) ? 0 : number;
+}
