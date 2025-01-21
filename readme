@@ -1,6 +1,6 @@
 HOW TO USE - THIS WILL SCRAPE ALL LEAD NAME, EMAIL, LINKEDIN, etc from each contact)
 
-In Main.js, at the beginning you'll see this:
+In apollo.js, at the beginning you'll see this:
 
 async function run() {
     const baseUrl = '';
