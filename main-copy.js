@@ -1,7 +1,11 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 
-
+async function run() {
+    const baseUrl = '';
+    const csvUrl = 'apollo.csv';
+    const email = '';
+    const password = '';
 
     console.time("ScriptRunTime");
     const browser = await puppeteer.launch({
