@@ -1,3 +1,19 @@
+HOW TO USE - THIS WILL SCRAPE ALL LEAD NAME, EMAIL, LINKEDIN, etc from each contact)
+
+In Main.js, at the beginning you'll see this:
+
+async function run() {
+    const baseUrl = '';
+    const csvUrl = 'apollo.csv';
+    const email = '';
+    const password = '';
+
+INPUT - baseURL (the url of the list you want scraped, if you don't have a list go to apollo.io and make one and paste the URL between 'https://apollo.io/LINKLINKLINK'.
+INPUT email (the business email attached with your account)
+INPUT password (The password associated with your account)
+
+--
+
 # to scrape more than 1K leads, add this at the start of the script
 
 const puppeteer = require('puppeteer');
